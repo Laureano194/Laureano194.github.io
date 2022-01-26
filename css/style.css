@@ -356,8 +356,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-#fh5co-counter,
-#fh5co-event {
+#fh5co-counter {
   height: 850px;
   float: left;
 }
@@ -950,8 +949,8 @@ form label {
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background: rgba(241, 78, 149, 0.8);
   margin: 0 4px;
   -webkit-border-radius: 50%;
@@ -959,7 +958,69 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
   position: relative;
-  animation: pulse 1s ease infinite;
+  animation: pulse 2s ease infinite;
+}
+
+@media (max-width: 440px) {
+  /*-----ESTILOS COUNT-DOWN-----*/
+  .simply-countdown > .simply-section {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: rgba(241, 78, 149, 0.8);
+    margin: 0 4px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 2s ease infinite;
+  }
+  .simply-countdown > .simply-section > div {
+    /* countdown block inner div */
+    /*display: table-cell;
+    vertical-align: middle;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    position:relative;
+    bottom: 12px;
+    font-size: 20px !important;
+  }
+  .simply-countdown > .simply-section .simply-word {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 10px;
+    position: relative;
+    bottom: 15px;
+    /* words */
+  }
+  /*-----ESTILOS GALERIA-----*/
+  
+  .popup-gallery2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .img-fluid{
+    max-width: 500px !important;
+    min-width: 300px !important;
+    height: 50vh !important;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 820px) {
+  .galeria-heading{
+    padding-top: 5vh !important;
+    position:relative;
+    top: 50px;
+    margin-bottom: 10vh !important;
+  }
 }
 
 @keyframes pulse {
@@ -977,8 +1038,8 @@ form label {
   /* countdown block inner div */
   display: table-cell;
   vertical-align: middle;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 }
 
 .simply-countdown > .simply-section .simply-amount,
@@ -994,9 +1055,9 @@ form label {
 }
 
 .simply-countdown > .simply-section .simply-word {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   /* words */
 }
 
@@ -2109,6 +2170,15 @@ footer{
 .event-card-list li span{
   display: inline-block !important;
   margin-bottom: 3px;
+}
+.popup-gallery{
+  width: 100vw;
+}
+.img-container{
+  max-height: 400px;
+  max-width: 400px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .groom img{
