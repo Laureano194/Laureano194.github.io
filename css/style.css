@@ -2054,19 +2054,6 @@ footer{
 	}
 }
 
-.img-fluid {
-  height: 45vh;
-  margin-right: 0;
-  margin-left: 0;
-  padding: 0;
-  transition: all .4s;
-  filter: brightness(75%);
-}
-
-.img-fluid:hover{
-  transform: scale(1.1);
-  filter: brightness(100%);
-}
 .form-control-select option{
   color: black;
 }
@@ -2171,14 +2158,33 @@ footer{
   display: inline-block !important;
   margin-bottom: 3px;
 }
-.popup-gallery{
+.popup-gallery2{
   width: 100vw;
+  margin-left: auto;
 }
 .img-container{
-  max-height: 400px;
-  max-width: 400px;
-  object-fit: cover;
+  display: inline-block;
+  max-height: 300px;
+  max-width: 300px;
+  min-height: 250px;
+  min-width: 250px;
   overflow: hidden;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.img-fluid {
+  object-fit: cover;
+  object-position: top;
+  margin-right: 0;
+  padding: 0;
+  transition: all .4s;
+  filter: brightness(75%);
+}
+
+.img-fluid:hover{
+  transform: scale(1.1);
+  filter: brightness(100%);
 }
 
 .groom img{
