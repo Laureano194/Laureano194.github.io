@@ -15,8 +15,6 @@ const onChange = () => {
         cantidad.removeAttribute("disabled");
         linkWhatsapp = `https://api.whatsapp.com/send?phone=${celular}&text=Soy%20${nombre}%20,%20somos%20${cantidad.value},%20menu%20${menu.value}`;
     }
-    console.log(linkWhatsapp);
-    let botonAsistencia = document.getElementById("asistencia");
-    botonAsistencia.href = linkWhatsapp;
-    console.log(botonAsistencia.href);
+    let botonAsistencia = document.getElementById("confirmacion");
+    botonAsistencia.setAttribute("href", linkWhatsapp);
 }
