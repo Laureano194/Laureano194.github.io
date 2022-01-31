@@ -7,10 +7,8 @@ const onChange = () => {
     let linkWhatsapp = "";
     
     if(asistencia.value=='No'){
-        menu.value=" ";
-        cantidad.value=" ";
+        menu.value="";
         menu.setAttribute("disabled", "true");
-        cantidad.setAttribute("disabled", "true");
         linkWhatsapp = `https://api.whatsapp.com/send?phone=${celular}&text=Soy%20${nombre}%20,%20No%20voy%20chau%20`;
     } else {
         menu.removeAttribute("disabled");

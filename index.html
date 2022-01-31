@@ -59,7 +59,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Tiziana</h1>
+							<h1 class="name-header">Tiziana</h1>
 							<h2>Acompañame a festejar mis 15!</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
@@ -114,12 +114,14 @@
 											<li><i class="icon-lista icon-calendar"></i><span>Sábado 19 de Marzo</span></li>	
 											<li><i class="icon-lista icon-clock"></i><span>Av. Cabrera 4400</span></li>	
 										</ul>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+										<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+										<div class="text-center maps-button">
+											<button type="button" class="btn"><a href="https://goo.gl/maps/erGAS5G6Jixx26gs8" target="_blank">ABRIR EN GOOGLE MAPS</a></button>
+											<!--<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.4470232108324!2d-62.22991398490557!3d-38.68457479214178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda491e09a738f%3A0x255da54107216654!2sYesterday!5e0!3m2!1ses!2sar!4v1641428128945!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>-->
+										</div>
 									</div>
-									<div class="col-md-6 col-sm-12 text-center">
+									<div class="col-md-6 col-sm-12">
 									<img id="map" src="images/salon-fiesta.jpg">
-										<button type="button" class="btn"><a href="https://goo.gl/maps/erGAS5G6Jixx26gs8" target="_blank">ABRIR EN GOOGLE MAPS</a></button>
-										<!--<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.4470232108324!2d-62.22991398490557!3d-38.68457479214178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda491e09a738f%3A0x255da54107216654!2sYesterday!5e0!3m2!1ses!2sar!4v1641428128945!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>-->
 									</div>
 								</div>
 						</div>
@@ -184,12 +186,6 @@
 					<form class="form-inline text-center">
 						<div class="col-md-12 col-sm-12">
 							<div class="form-group">
-								<label for="name" class="sr-only">Nombre</label>
-								<input type="name" class="form-control" id="name" onchange="onChange()" placeholder="Nombre y Apellido">
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<div class="form-group">
 								<label for="name" class="sr-only">¿Vas a asistir?</label>
 								<select name="select0" class="form-control form-control-select" onchange="onChange()" id="asistencia" required>
 									<option disabled selected>¿Vas a asistir?</option>
@@ -200,6 +196,18 @@
 						</div>
 						<div class="col-md-12 col-sm-12">
 							<div class="form-group">
+								<label for="asistentes" class="sr-only">¿Cuántos son?</label>
+								<input type="number" class="form-control" max="10" min="1" placeholder="¿Cuántos son?" onchange="onChange()" id="cantidad" required>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<div class="form-group">
+								<label for="name" class="sr-only">Nombre</label>
+								<input type="name" class="form-control" id="name" onchange="onChange()" placeholder="Nombre y Apellido">
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12 m-bottom">
+							<div class="form-group">
 								<label for="email" class="sr-only">Menú especial</label>
 								<select name="select" placeholder="¿Cuántos son?" class="form-control form-control-select" id="menu" onchange="onChange()" required>
 									<option disabled selected>Menú especial</option>
@@ -207,24 +215,6 @@
 									<option value="Celiaco">Celíaco</option>
 									<option value="Vegetariano">Vegetariano</option>
 								</select>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12 m-bottom">
-							<div class="form-group">
-								<label for="asistentes" class="sr-only">¿Cuántos son?</label>
-								<select name="select1" class="form-control form-control-select" onchange="onChange()" id="cantidad" required>
-									<option disabled selected>¿Cuántos son?</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-									<option value="10">10</option>
-								  </select>
 							</div>
 						</div>
 						<div class="mx-auto">
